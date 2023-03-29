@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brian Bawden</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script type="text/javascript">
+        function sendEmail() {
+          Email.send({
+            Host: "smtp.gmail.com",
+            Username: "brianswebsite001@gmail.com",
+            Password: "GOk87brian",
+            To: 'brianswebsite001@gmail.com',
+            From: "rianswebsite001@gmail.com",
+            Subject: "Sending Email using javascript",
+            Body: "Well that was easy!!",
+          })
+            .then(function (message) {
+              alert("mail sent successfully")
+            });
+        }
+      </script>
 </head>
 <body>
 
@@ -54,15 +72,15 @@
     </div>
 
     <div id="contact_me">
-        <form action="">
+        <form action="https://formsubmit.co/brianswebsite001@gmail.com" method="POST">
             <h3>Contact Me</h3>
             <label for="contact_name">Name</label>
-            <input type="text" id="contact_name" placeholder="Name" required><br>
+            <input type="text" id="contact_name" placeholder="Name" name="name" required><br>
             <label for="email">Enter your email:</label>
             <input type="email" id="contact_email" name="email" placeholder="email@email.com" required><br>
             <label for="comment">Comment:</label>
             <textarea name="comment" id="comment" cols="30" rows="10" required></textarea> <br>
-            <button onclick="contact()" id="contact_btn">Submit</button>
+            <input type="submit" value="Send">
         </form>
         
     </div>

@@ -11,18 +11,35 @@
 </head>
 <body>
 
-    <div id="nav_bar">
-        <a class="banner_link" href="#nav_bar">Home</a>
-        <a class="banner_link" href="#projects_thumbnails">Projects</a>
-        <a class="banner_link" href="#about_me">About Me</a>
-        <a class="banner_link" href="#contact_me">Contact me</a>
+    <!-- Nav bar -->
+    <div class="container navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects_thumbnails">Projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about_me">About Me</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact_me">Contact me</a>
+                      </li>
+        </div>
+
     </div>
 
-    <div id="self_pic">
+    <!-- Self picture -->
+    <div id="self_pic" class="container">
         <img id="brian" src="images/personal_portrait.png" alt="self portrait"> <!-- images/personal_portrait.png -->
     </div>
 
-    <div id="projects_thumbnails">
+    <!-- Project Thumbnails -->
+    <div id="projects_thumbnails" class="container">
         <div id="project_1" class="thumbnail">
             <a target="_blank" href="images/favBook.png">
                 <img src="images/favBook.png" alt="GUI for favorite book" style="width:150px">
@@ -50,19 +67,21 @@
             </a>
             <figcaption>This screenshot is of a tic tac toe game I made. Each click in a square will cycle through x, o, and ' '. To see the code check out my <a target="_blank" href="https://github.com/BrianBawden/simple_js_projects/tree/master/ticTacToe">github</a> page.</figcaption>
         </div>
-        <a href="#nav_bar">Back to top</a>
+        <a href="#">Back to top</a>
     </div>
 
-    <div id="about_me">
+    <!-- About Me -->
+    <div id="about_me" class="container">
         <h3>About Me</h3>
         <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia id sint cumque accusantium sequi, debitis ex tempora quae reiciendis quibusdam? Doloribus, aperiam. Sed ut et, mollitia eaque veritatis quis. Nobis!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia id sint cumque accusantium sequi, debitis ex tempora quae reiciendis quibusdam? Doloribus, aperiam. Sed ut et, mollitia eaque veritatis quis. Nobis!</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia id sint cumque accusantium sequi, debitis ex tempora quae reiciendis quibusdam? Doloribus, aperiam. Sed ut et, mollitia eaque veritatis quis. Nobis!</p>
-        <a href="#nav_bar">Back to top</a>
+        <a href="#">Back to top</a>
 
     </div>
 
-    <div id="contact_me">
+    <!-- Contact Me -->
+    <div id="contact_me" class="container">
         <form action="https://formsubmit.co/brianswebsite001@gmail.com" method="POST">
             <h3>Contact Me</h3>
             <label for="contact_name">Name</label>
@@ -76,7 +95,7 @@
             <input type="hidden" name="_template" value="table">
             <button class="btn btn-primary" type="submit" value="Send">Send</button>
         </form>
-        <a href="#nav_bar">Back to top</a>
+        <a href="#">Back to top</a>
         
     </div>
 

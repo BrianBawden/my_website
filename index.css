@@ -21,3 +21,6 @@ body{
   /* object-fit: contain; */
 }
 
+p{
+  margin-bottom: 0em;
+}
